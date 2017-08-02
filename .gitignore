@@ -1,0 +1,15 @@
+# Mac OS X
+.DS_Store
+
+# Intellij
+.idea
+*.iml
+
+# npm
+node_modules/**/.bin/
+
+# generated files
+generated/
+
+# Node Modules
+node_modules/

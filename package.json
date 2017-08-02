@@ -1,0 +1,34 @@
+{
+  "name": "build_environment",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "6.10.1"
+  },
+  "description": "Build Environment ================================",
+  "main": "Jakefile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HySteffensen/build-environment.git"
+  },
+  "author": "Hyrum Steffensen",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "chai": "^3.2.0",
+    "http-server": "^0.8.0",
+    "jake": "^8.0.12",
+    "jshint": "^2.8.0",
+    "karma": "^0.13.9",
+    "karma-commonjs": "^1.0.0",
+    "karma-mocha": "^0.2.0",
+    "mocha": "^2.2.5",
+    "semver": "^4.3.6",
+    "shelljs": "^0.7.7",
+    "simplebuild-jshint": "^0.3.0",
+    "simplebuild-karma": "^0.8.1"
+  }
+}
