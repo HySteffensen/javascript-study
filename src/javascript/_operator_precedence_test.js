@@ -1,5 +1,5 @@
 (function() {
-  "use strict"
+  "use strict";
 
   var assert = require('./assert.js');
 
@@ -70,7 +70,9 @@
         // a coerced to 0 is false, false || true equals true
         assert.equal(a || true, true);
 
+        /* jshint ignore: start */
         assert.equal(a == false, true);
+        /* jshint ignore: end */
       });
 
     });

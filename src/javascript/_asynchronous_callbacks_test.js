@@ -1,5 +1,5 @@
 (function() {
-  "use strict"
+  "use strict";
 
   function waitThreeSeconds() {
     var ms = 3000 + new Date().getTime();

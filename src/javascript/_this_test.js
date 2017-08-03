@@ -1,7 +1,8 @@
-(function() {
-  "use static"
+/* jshint ignore:start */
 
-  assert = require('./assert.js');
+(function() {
+
+  var assert = require('./assert.js');
 
   describe("this keyword", function() {
     it("this is global in scope", function() {
@@ -22,10 +23,10 @@
 
            var setname = function(newname) {
             this.name = newname;
-           }
+           };
            setname('Updated again! The c object');
         }
-      }
+      };
       c.log();
       assert.equal(c.name, 'Updated c object');
       // This is considered by some a bug in JavaScript. 'name'
@@ -44,10 +45,10 @@
 
            var setname = function(newname) {
             self.name = newname;
-           }
+           };
            setname('Updated again! The c object');
         }
-      }
+      };
       c.log();
       assert.equal(c.name, 'Updated again! The c object');
     });

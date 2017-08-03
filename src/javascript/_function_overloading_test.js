@@ -24,7 +24,7 @@
       function greetSpanish(firstname, lastname) {
         return greet(firstname, lastname, 'es');
       }
-      
+
       assert.equal(greetEnglish('John', 'Doe'), "Hello John Doe");
       assert.equal(greetSpanish('John', 'Doe'), "Hola John Doe");
     });

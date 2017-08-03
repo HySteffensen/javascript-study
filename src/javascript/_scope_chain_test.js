@@ -1,5 +1,7 @@
+/* jshint ignore: start */
+
 (function() {
-  "use strict"
+  "use strict";
 
   var assert = require('./assert.js');
 

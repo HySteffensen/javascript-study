@@ -20,7 +20,7 @@
     }, { async: true });
 
     desc("Default build");
-    task("default", [ "version", "test" ], function () {
+    task("default", [ "version", "lint", "test" ], function () {
         console.log("\n\nBUILD OK");
     });
 

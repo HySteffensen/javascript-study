@@ -1,3 +1,5 @@
+/* jshint ignore: start */
+
 (function () {
     "use strict";
 
@@ -8,7 +10,7 @@
           // sets memory but undefined
           var a;
           assert.strictEqual(a, undefined);
-        })
+        });
 
         it('is not defined', function() {
           // a not set in memory
