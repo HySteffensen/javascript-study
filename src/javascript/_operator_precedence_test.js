@@ -39,6 +39,39 @@
         assert.equal(0, false);
         assert.notDeepEqual(0, false);
       });
+    });
+
+    describe("Boolean", function() {
+      it("coerces boolean", function() {
+        assert.equal(Boolean(undefined), false);
+        assert.equal(Boolean(null), false);
+        assert.equal(Boolean(""), false);
+      });
+
+      it("if statement coerces to boolean", function() {
+        var a;
+        assert.equal(boolCheck(a), false);
+        var b = null;
+        assert.equal(boolCheck(b), false);
+        var c = "";
+        assert.equal(boolCheck(c), false);
+
+        function boolCheck(variable) {
+          if (!variable) return false;
+        }
+      });
+
+      it("if statement coercion OR", function() {
+        var a = 0;
+
+        assert.equal(a || a === 0, true);
+        // '===' has a higher precedence than '||'
+        assert.equal(a === 0, true);
+        // a coerced to 0 is false, false || true equals true
+        assert.equal(a || true, true);
+
+        assert.equal(a == false, true);
+      });
 
     });
   });
