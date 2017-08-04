@@ -4,7 +4,7 @@
   var assert = require('./assert.js');
 
   describe("Function Factories", function() {
-    it("", function() {
+    it("factory creates and returns greeting", function() {
       function makeGreeting(language) {
         return function(firstname, lastname) {
           if (language === 'en') {
@@ -20,8 +20,8 @@
       var greetEnglish = makeGreeting('en');
       var greetSpanish = makeGreeting('es');
 
-      greetEnglish('John', 'Doe');
-      greetSpanish('John', 'Doe');
+      assert.equal(greetEnglish('John', 'Doe'), "Hello John Doe");
+      assert.equal(greetSpanish('John', 'Doe'), "Hola John Doe");
     });
   });
 
