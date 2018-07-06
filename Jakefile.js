@@ -69,7 +69,7 @@
             expectedBrowsers: [
 //                "Chrome 58.0.3029 (Mac OS X 10.11.2)",
 //                "Firefox 53.0.0 (Mac OS X 10.11.0)"
-                  "Firefox 45.0.0 (Linux 0.0.0)"
+                  "Firefox 61.0.0 (Ubuntu 0.0.0)"
             ],
             strict: !process.env.loose
         }, complete, fail);
